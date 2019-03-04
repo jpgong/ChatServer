@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.chatTest.derby.UserDatabase" x="478" y="273">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.chatTest.Jframe.User" x="148" y="364">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.chatTest.Jframe.ServerFrame" x="333" y="64">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.chatTest.derby.UserDatabase"
+            endpointName="userDatabase" kind="Simple"/>
+        <Association
+            destinationClassName="com.chatTest.Jframe.UserManager"
+            endpointName="userManager" kind="Simple"/>
+        <Communication destinationClassName="com.chatTest.derby.UserDatabase"/>
+        <Communication destinationClassName="com.chatTest.Jframe.ServerFrame.UserHandle"/>
+        <Communication destinationClassName="com.chatTest.Jframe.UserManager"/>
+    </Class>
+    <Class name="com.chatTest.Jframe.ServerFrame.UserHandle" x="645" y="84">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.chatTest.derby.UserDatabase"/>
+        <Communication destinationClassName="com.chatTest.Jframe.UserManager"/>
+    </Class>
+    <Class name="com.chatTest.Jframe.UserManager" x="192" y="257">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.chatTest.Jframe.User"
+            endpointName="onLineUser" kind="Simple"/>
+        <Communication destinationClassName="com.chatTest.Jframe.User"/>
+    </Class>
+</ClassDiagram>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun May 20 23:56:16 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0163-7e44-0218-000006bfe850 
+on database directory G:\Cryptography\ChatServer\USERDB with class loader sun.misc.Launcher$AppClassLoader@7852e922 
+Loaded from file:/G:/Cryptography/ChatServer/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_152-b16
+user.dir=G:\Cryptography\ChatServer
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
